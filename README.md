@@ -1,3 +1,22 @@
+Avito patched Selendroid
+========================
+
+Based on Selendroid 0.17.0. (`d4f5cf1`)
+
+Changes
+-------
+
+- Add scroll to element (`/wd/hub/session/:sessionId/element/:id/scrollTo`)
+
+Build
+-----
+
+```
+$ export MAVEN_OPTS="-Xms1024m -Xmx2048m -Xss2048k"
+$ mvn clean compile package
+```
+
+
 Selendroid
 ==========
 
@@ -5,7 +24,7 @@ Selendroid
 
 Selendroid is a test automation framework which drives of the UI of Android native and hybrid applications (apps) and the mobile web with Selendroid. Tests are written using the Selenium 2 client API and for testing the application under test must not be modified. 
 
-Selendroid can be used on emulators and real devices and can be integrated as a node into the Selenium Grid for scaling and parallel testing. 
+Selendroid can be used on emulators and real devices and can be integrated as a node into the Selenium Grid for scaling and parallel testing.
 
 
 You want more details?

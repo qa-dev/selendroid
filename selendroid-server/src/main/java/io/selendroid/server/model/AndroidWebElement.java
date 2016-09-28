@@ -236,6 +236,11 @@ public class AndroidWebElement implements AndroidElement {
   }
 
   @Override
+  public void scrollTo() {
+    throw new RuntimeException("Not implemented yet");
+  }
+
+  @Override
   public void click() {
     String tagName = getTagName();
     if ((tagName != null && "OPTION".equals(tagName.toUpperCase())) || driver.isInFrame()) {

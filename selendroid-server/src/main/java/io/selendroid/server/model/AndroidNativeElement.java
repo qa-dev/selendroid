@@ -252,6 +252,11 @@ public class AndroidNativeElement implements AndroidElement {
   }
 
   @Override
+  public void scrollTo() {
+    scrollIntoScreenIfNeeded();
+  }
+
+  @Override
   public void click() {
     waitUntilIsDisplayed();
     scrollIntoScreenIfNeeded();

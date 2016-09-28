@@ -36,6 +36,8 @@ public interface AndroidElement {
 
   public String getText();
 
+  public void scrollTo();
+
   public void click();
 
   public void submit();

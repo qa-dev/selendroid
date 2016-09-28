@@ -63,6 +63,11 @@ public class AndroidRElement implements AndroidElement {
   }
 
   @Override
+  public void scrollTo() {
+    throw new RuntimeException(NOT_IMPLEMENTED_ERROR_MSG);
+  }
+
+  @Override
   public void click() {
     throw new RuntimeException(NOT_IMPLEMENTED_ERROR_MSG);
   }
